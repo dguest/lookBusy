@@ -1,9 +1,10 @@
 #!/bin/bash
+
 # Original Author: Austin Basye (https://twitter.com/ATBasye/status/844563088871448576)
 # Author: Matthew Feickert
 # Date: 2017-03-22
 
-keyboard_interrupt() {
+function keyboard_interrupt() {
   trap SIGINT
   if [[ -f linuxSource ]]; then
     rm -rf linux-0.01.tar.gz linux linuxSource
